@@ -135,7 +135,6 @@ body {
   height: 100%;
   font-family: 'Quicksand', sans-serif;
   font-size: 62.5%;
-  background-color: aliceblue;
 }
 .billboard-styles {
   font-family: 'Oswald', sans-serif;
@@ -144,30 +143,26 @@ body {
   font-style: oblique;
   color: snow;
 }
-.heading-styles {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
 .container {
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
 }
 .billboard {
   display: block;
   background-image: url(https://www.codingdojo.com/blog/wp-content/uploads/most-popular-programming-languages-of-2018.png);
-  height: 450px;
+  height: 550px;
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.billboard h1 {
+.billboard h1,
+.billboard h3 {
   font-family: 'Oswald', sans-serif;
   font-size: 5rem;
   font-weight: 800;
   font-style: oblique;
   color: snow;
   margin: 2rem;
-  padding-top: 1.2rem;
+  padding-top: 2rem;
 }
 .head {
   height: 3rem;
@@ -176,95 +171,9 @@ body {
 }
 .head .topNav {
   display: flex;
-  margin-left: 670px;
+  margin-left: 870px;
 }
 .head .topNav a {
-  flex-direction: row;
-  justify-content: space-around;
-  color: snow;
-  text-decoration: none;
-  font-size: 2.5rem;
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
-}
-.intro {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-article {
-  width: 100%;
-  margin: 2rem;
-}
-article p {
-  width: 85%;
-  line-height: 2;
-  font-size: 1.5rem;
-}
-article h3 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-.work-img {
-  width: 60%;
-  margin: 2rem;
-}
-.skills img {
-  width: 50px;
-  height: 50px;
-  padding: 0.5rem;
-  margin-right: 1rem;
-}
-.skills {
-  margin: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-.skills h3 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-.skills li {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-}
-.skills p {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-}
-.workHistory {
-  width: 100%;
-  margin: 2rem;
-  padding-top: 2rem;
-}
-.workHistory h3 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-.job h4 {
-  font-size: 1.7rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-.job p {
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
-.foot {
-  height: 3rem;
-  width: 100%;
-  background-color: darkslategray;
-}
-.foot .bttmNav {
-  display: flex;
-}
-.foot .bttmNav a {
   flex-direction: row;
   justify-content: space-around;
   color: snow;
