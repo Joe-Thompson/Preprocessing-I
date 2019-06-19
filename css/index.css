@@ -258,7 +258,7 @@ body {
   margin-right: 1rem;
 }
 .skills {
-  margin: 2rem;
+  margin: 0rem 2rem 0 2rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   border-top: 1px solid black;
@@ -268,6 +268,7 @@ body {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 .skills li {
   display: flex;
@@ -285,8 +286,9 @@ body {
 }
 .workHistory {
   width: 100%;
-  margin: 2rem;
+  margin: 0 2rem 2rem 2rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid black;
 }
 @media (max-width: 500px) {
@@ -315,6 +317,7 @@ body {
 .job p {
   font-size: 1.5rem;
   line-height: 1.5;
+  margin-bottom: 2rem;
 }
 .contact {
   width: 100%;
