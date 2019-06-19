@@ -153,12 +153,23 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .billboard {
   display: block;
   background-image: url(https://www.codingdojo.com/blog/wp-content/uploads/most-popular-programming-languages-of-2018.png);
   height: 450px;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+@media (max-width: 500px) {
+  .billboard {
+    height: 175px;
+  }
 }
 .billboard h1 {
   font-family: 'Oswald', sans-serif;
@@ -169,6 +180,13 @@ body {
   margin: 2rem;
   padding-top: 1.2rem;
 }
+@media (max-width: 500px) {
+  .billboard h1 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0 0 1rem 1rem;
+  }
+}
 .head {
   height: 3rem;
   width: 100%;
@@ -177,6 +195,11 @@ body {
 .head .topNav {
   display: flex;
   margin-left: 670px;
+}
+@media (max-width: 500px) {
+  .head .topNav {
+    margin: 0 auto;
+  }
 }
 .head .topNav a {
   flex-direction: row;
@@ -187,21 +210,34 @@ body {
   padding-right: 2.5rem;
   padding-left: 2.5rem;
 }
+@media (max-width: 500px) {
+  .head .topNav a {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
 .intro {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-article {
+.details {
   width: 100%;
   margin: 2rem;
 }
-article p {
+.details p {
   width: 85%;
   line-height: 2;
   font-size: 1.5rem;
 }
-article h3 {
+@media (max-width: 500px) {
+  .details p {
+    margin: 0 auto;
+  }
+}
+.details h3 {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -209,6 +245,11 @@ article h3 {
 .work-img {
   width: 60%;
   margin: 2rem;
+}
+@media (max-width: 500px) {
+  .work-img {
+    display: none;
+  }
 }
 .skills img {
   width: 50px;
@@ -237,10 +278,24 @@ article h3 {
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
+@media (max-width: 500px) {
+  .skills p {
+    line-height: 1.3;
+  }
+}
 .workHistory {
   width: 100%;
   margin: 2rem;
   padding-top: 2rem;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 500px) {
+  .workHistory {
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+  }
 }
 .workHistory h3 {
   font-size: 3rem;
@@ -252,9 +307,28 @@ article h3 {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+@media (max-width: 500px) {
+  .job h4 {
+    margin: 2rem 0;
+  }
+}
 .job p {
   font-size: 1.5rem;
   line-height: 1.5;
+}
+.contact {
+  width: 100%;
+  margin: 2rem;
+}
+.contact h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact li {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 0.5rem;
 }
 .foot {
   height: 3rem;
@@ -272,4 +346,10 @@ article h3 {
   font-size: 2.5rem;
   padding-right: 2.5rem;
   padding-left: 2.5rem;
+}
+@media (max-width: 500px) {
+  .foot .bttmNav a {
+    font-size: 2rem;
+    justify-content: center;
+  }
 }
