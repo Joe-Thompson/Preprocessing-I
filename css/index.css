@@ -1,1 +1,358 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 62.5%;
+  background-color: aliceblue;
+}
+.billboard-styles {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: oblique;
+  color: snow;
+}
+.heading-styles {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.billboard {
+  display: block;
+  background-image: url(https://www.codingdojo.com/blog/wp-content/uploads/most-popular-programming-languages-of-2018.png);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media (max-width: 500px) {
+  .billboard {
+    height: 175px;
+  }
+}
+.billboard h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: oblique;
+  color: snow;
+  margin: 2rem;
+  padding-top: 1.2rem;
+}
+@media (max-width: 500px) {
+  .billboard h1 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0 0 1rem 1rem;
+  }
+}
+.head {
+  height: 3rem;
+  width: 100%;
+  background-color: darkslategray;
+}
+.head .topNav {
+  display: flex;
+  margin-left: 670px;
+}
+@media (max-width: 500px) {
+  .head .topNav {
+    margin: 0 auto;
+  }
+}
+.head .topNav a {
+  flex-direction: row;
+  justify-content: space-around;
+  color: snow;
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+@media (max-width: 500px) {
+  .head .topNav a {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+.intro {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.details {
+  width: 100%;
+  margin: 2rem;
+}
+.details p {
+  width: 85%;
+  line-height: 2;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .details p {
+    margin: 0 auto;
+  }
+}
+.details h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.work-img {
+  width: 60%;
+  margin: 2rem;
+}
+@media (max-width: 500px) {
+  .work-img {
+    display: none;
+  }
+}
+.skills img {
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+.skills {
+  margin: 0rem 2rem 0 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.skills h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+.skills li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.skills p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+@media (max-width: 500px) {
+  .skills p {
+    line-height: 1.3;
+  }
+}
+.workHistory {
+  width: 100%;
+  margin: 0 2rem 2rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 500px) {
+  .workHistory {
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+  }
+}
+.workHistory h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.job h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .job h4 {
+    margin: 2rem 0;
+  }
+}
+.job p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.contact {
+  width: 100%;
+  margin: 2rem;
+}
+.contact h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact li {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 0.5rem;
+}
+.foot {
+  height: 3rem;
+  width: 100%;
+  background-color: darkslategray;
+}
+.foot .bttmNav {
+  display: flex;
+}
+.foot .bttmNav a {
+  flex-direction: row;
+  justify-content: space-around;
+  color: snow;
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+@media (max-width: 500px) {
+  .foot .bttmNav a {
+    font-size: 2rem;
+    justify-content: center;
+  }
+}
